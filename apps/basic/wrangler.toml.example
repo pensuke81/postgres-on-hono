@@ -1,0 +1,13 @@
+name = "postgres-on-workers"
+compatibility_date = "2023-12-01"
+compatibility_flags = [ "nodejs_compat" ]
+
+hyperdrive = [
+    { binding = "HYPERDRIVE", id = "xxx", localConnectionString = "postgresql://postgres:secret@localhost:5432/postgres" },
+    { binding = "HYPERDRIVE_CACHED", id = "yyy", localConnectionString = "postgresql://postgres:secret@localhost:5432/postgres" }
+]
+
+[vars]
+DATABASE_URL_CLOUDSQL = "postgresql://postgres:secret@localhost:5432/postgres"
+DATABASE_URL_SUPABASE = "postgresql://postgres:secret@localhost:5432/postgres"
+DATABASE_URL_NEON = "postgresql://postgres:secret@localhost:5432/postgres"

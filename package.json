@@ -1,0 +1,11 @@
+{
+  "name": "workers-playground",
+  "version": "0.0.0",
+  "scripts": {},
+  "keywords": [],
+  "author": "pensuke81",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3"
+  }
+}
