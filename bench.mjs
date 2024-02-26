@@ -10,7 +10,7 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get(`${__ENV.HOST}/${__ENV.PATH}`);
+  const res = http.get(`${__ENV.ORIGIN}/${__ENV.PATH}`);
   check(res, {
     is_status_200: (r) => {
       console.log(r.body);
